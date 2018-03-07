@@ -64,6 +64,22 @@
             </div>
         </nav>
 
+        @if(isSudoModeActive())
+        <div class="alert alert-warning" role="alert">
+            <p>
+              You can currently perform super-user tasks. <a href="{{ route('sudo.exit') }}">Exit sudo mode</a> if you no longer need this access.
+            </p>
+        </div>
+        @endif
+
+        @if(session('success'))
+        <div class="alert alert-success" role="alert">
+            <p>
+                {{ session('success') }}
+            </p>
+        </div>
+        @endif
+
         @yield('content')
     </div>
 

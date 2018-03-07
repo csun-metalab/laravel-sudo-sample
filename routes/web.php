@@ -20,6 +20,14 @@ Route::get('logout', 'AuthController@getLogout')->name('logout');
 // authenticated home screen
 Route::get('home', 'HomeController@index')->name('home');
 
-// exit sudo mode
+// display the screen that will require sudo mode to submit the data
+Route::get('submit', 'HomeController@getSubmit')->name('submit.get');
+
+// protect the submit POST route with the sudo middleware
+Route::group(['middleware' => ['auth', 'sudo']], function () {
+  Route::post('submit', 'HomeController@postSubmit')->name('submit.post');
+});
+
+// exit sudo mode manually
 Route::get('exit_sudo', '\CSUNMetaLab\Sudo\Http\Controllers\SudoController@exitSudoMode')
    ->name('sudo.exit');

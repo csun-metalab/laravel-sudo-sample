@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function getSubmit() {
+        return view('submit');
+    }
+
+    public function postSubmit(Request $request) {
+        // return to the home screen with a success message
+        return redirect('/')
+            ->with('success', 'You successfully submitted: ' . $request->input('text'));
+    }
 }
