@@ -52,6 +52,7 @@
             <div class="form-group">
               <label for="sudo_password"><span class="required">*</span> Confirm Password</label>
               <input type="password" class="form-control" name="sudo_password" id="sudo_password" />
+              <input type="hidden" name="sudo_mode_submission" value="true" />
             </div>
 
             {!! $input_markup !!}
