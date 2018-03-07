@@ -27,7 +27,10 @@ class AuthController extends Controller
 
 	public function getLogout() {
 		Auth::logout();
-		session()->flush();
+		
+		// exit sudo mode (drop session values)
+		exitSudoMode();
+
 		return redirect('/');
 	}
 
