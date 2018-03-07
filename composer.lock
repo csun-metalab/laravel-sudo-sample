@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a80c693250b7591c549b0b5a4311e6f3",
+    "content-hash": "62d8360eab47e0a7489dfd9e02dad19e",
     "packages": [
         {
             "name": "csun-metalab/laravel-directory-authentication",
@@ -44,6 +44,48 @@
             ],
             "description": "Composer package for Laravel 5.0 and above to allow for directory-based authentication",
             "time": "2018-01-31T22:09:01+00:00"
+        },
+        {
+            "name": "csun-metalab/laravel-sudo",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csun-metalab/laravel-sudo.git",
+                "reference": "3c31be16bd08a1b03eb926044e457c05970d0fe1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csun-metalab/laravel-sudo/zipball/3c31be16bd08a1b03eb926044e457c05970d0fe1",
+                "reference": "3c31be16bd08a1b03eb926044e457c05970d0fe1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Sudo/"
+                ],
+                "files": [
+                    "src/Sudo/helpers.php"
+                ],
+                "psr-4": {
+                    "CSUNMetaLab\\Sudo\\": "src/Sudo/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Fritz",
+                    "email": "mattf@burbankparanormal.com"
+                }
+            ],
+            "description": "Composer package for Laravel 5.0 and above that allows for the use of \"sudo mode\" in protected areas",
+            "time": "2018-03-07T20:31:36+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
