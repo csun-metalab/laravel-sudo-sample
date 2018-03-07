@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>{{ config('app.name') | Confirm Password</title>
+    <title>{{ config('app.name') }} | Confirm Password</title>
 
     <style type="text/css">
       .required {
@@ -45,9 +45,9 @@
         <div class="col-sm-8">
           <form method="{{ $form_method }}" action="{{ $request_url }}">
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-            @if(!in_array($request_method, ['GET', 'POST'])) {
+            @if(!in_array($request_method, ['GET', 'POST']))
             	<input type="hidden" name="_method" value="{{ $request_method }}" />
-            }
+            @endif
 
             <div class="form-group">
               <label for="sudo_password"><span class="required">*</span> Confirm Password</label>
