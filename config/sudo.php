@@ -31,6 +31,36 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Sudo mode Auth::attempt() username key
+    |--------------------------------------------------------------------------
+    |
+    | The username key used in the call to Auth::attempt() when trying the
+    | provided user credentials. This is typically the first key in the array
+    | that gets passed to Auth::attempt(). This is modifiable in order to allow
+    | the package to conform to your custom auth driver.
+    |
+    | Default is "username".
+    |
+    */
+    'auth_username_key' => env("SUDO_AUTH_USERNAME_KEY", "username"),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Sudo mode Auth::attempt() password key
+    |--------------------------------------------------------------------------
+    |
+    | The password key used in the call to Auth::attempt() when trying the
+    | provided user credentials. This is typically the second key in the array
+    | that gets passed to Auth::attempt(). This is modifiable in order to allow
+    | the package to conform to your custom auth driver.
+    |
+    | Default is "password".
+    |
+    */
+    'auth_password_key' => env("SUDO_AUTH_PASSWORD_KEY", "password"),
+
+    /*
+    |--------------------------------------------------------------------------
     | Sudo mode prompt only while masquerading
     |--------------------------------------------------------------------------
     |
