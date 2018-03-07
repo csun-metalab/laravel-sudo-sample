@@ -47,16 +47,16 @@
         },
         {
             "name": "csun-metalab/laravel-sudo",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/csun-metalab/laravel-sudo.git",
-                "reference": "3c31be16bd08a1b03eb926044e457c05970d0fe1"
+                "reference": "d224626f49d00861f4b956fea07e04e2969cb2b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csun-metalab/laravel-sudo/zipball/3c31be16bd08a1b03eb926044e457c05970d0fe1",
-                "reference": "3c31be16bd08a1b03eb926044e457c05970d0fe1",
+                "url": "https://api.github.com/repos/csun-metalab/laravel-sudo/zipball/d224626f49d00861f4b956fea07e04e2969cb2b0",
+                "reference": "d224626f49d00861f4b956fea07e04e2969cb2b0",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 }
             ],
             "description": "Composer package for Laravel 5.0 and above that allows for the use of \"sudo mode\" in protected areas",
-            "time": "2018-03-07T20:31:36+00:00"
+            "time": "2018-03-07T20:49:38+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
