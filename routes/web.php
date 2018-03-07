@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// auth routes
+Route::get('/', 'AuthController@getLogin');
+Route::get('login', 'AuthController@getLogin');
+Route::post('login', 'AuthController@postLogin')->name('login');
+Route::get('logout', 'AuthController@getLogout')->name('logout');
+
+// authenticated home screen
+Route::get('home', 'HomeController@index')->name('home');
 
 // exit sudo mode
 Route::get('exit_sudo', '\CSUNMetaLab\Sudo\Http\Controllers\SudoController@exitSudoMode')
