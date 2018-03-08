@@ -40,7 +40,7 @@
                           <span class="required">*</span> Confirm Password
                         </label>
                         <div class="col-md-6">
-                          <input type="password" class="form-control" name="sudo_password" id="sudo_password" />
+                          <input type="password" class="form-control" name="sudo_password" id="sudo_password" autofocus/>
                           <input type="hidden" name="sudo_mode_submission" value="true" />
                         </div>
                     </div>
