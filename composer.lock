@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62d8360eab47e0a7489dfd9e02dad19e",
+    "content-hash": "c63e052b853a0cb1138ba419a6d6b7f8",
     "packages": [
         {
             "name": "csun-metalab/laravel-directory-authentication",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/csun-metalab/laravel-directory-authentication.git",
-                "reference": "77c25b37882103e4056d7977fb242f529d80f385"
+                "reference": "356e5f6b98c97734e065db9f996147c6350ecf2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csun-metalab/laravel-directory-authentication/zipball/77c25b37882103e4056d7977fb242f529d80f385",
-                "reference": "77c25b37882103e4056d7977fb242f529d80f385",
+                "url": "https://api.github.com/repos/csun-metalab/laravel-directory-authentication/zipball/356e5f6b98c97734e065db9f996147c6350ecf2d",
+                "reference": "356e5f6b98c97734e065db9f996147c6350ecf2d",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "Composer package for Laravel 5.0 and above to allow for directory-based authentication",
-            "time": "2018-01-31T22:09:01+00:00"
+            "time": "2018-03-15T19:50:51+00:00"
         },
         {
             "name": "csun-metalab/laravel-sudo",
